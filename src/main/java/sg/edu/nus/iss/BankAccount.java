@@ -24,6 +24,16 @@ public class BankAccount {
                 "Date created: " + createdDate);
     }
 
+    public BankAccount(String name, float startBalance){
+        this.name = name;
+        setAccountBalance(startBalance);
+        setCreatedDate(LocalDate.now());
+        System.out.println(
+                "Account name: " + name + "\n" +
+                "Account balance: " + accountBalance + "\n" +
+                "Date created: " + createdDate);
+    }
+
     // format sysout
     public void deposit(float depositValue) {
         if (depositValue <= 0 || accountClosed) {

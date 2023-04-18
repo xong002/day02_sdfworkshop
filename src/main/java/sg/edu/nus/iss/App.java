@@ -1,20 +1,15 @@
 package sg.edu.nus.iss;
 
-import java.io.Console;
+public class App {
+    public static void main(String[] args) {
+        BankAccount bankAccount1 = new BankAccount("John");
 
-public class App 
-{
-    public static void main( String[] args )
-    {
-        Console con = System.console();
-        String input = con.readLine("Enter name\n");
+        bankAccount1.deposit(100);
 
-        BankAccount bankAccount = new BankAccount(input);
+        BankAccount bankAccount2 = new BankAccount("Ben", 100);
 
-        bankAccount.deposit(100);
-        bankAccount.deposit(200);
-        bankAccount.withdraw(50);
-        bankAccount.withdraw(100);
+        bankAccount2.deposit(200);
+        bankAccount2.withdraw(50);
 
     }
 }
