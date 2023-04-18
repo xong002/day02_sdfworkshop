@@ -20,7 +20,7 @@ public class BankAccount {
         setCreatedDate(LocalDate.now());
         System.out.println(
                 "Account name: " + name + "\n" +
-                "Account balance: " + accountBalance + "\n" +
+                "Starting account balance: " + accountBalance + "\n" +
                 "Date created: " + createdDate);
     }
 
@@ -30,7 +30,7 @@ public class BankAccount {
         setCreatedDate(LocalDate.now());
         System.out.println(
                 "Account name: " + name + "\n" +
-                "Account balance: " + accountBalance + "\n" +
+                "Starting account balance: " + accountBalance + "\n" +
                 "Date created: " + createdDate);
     }
 
