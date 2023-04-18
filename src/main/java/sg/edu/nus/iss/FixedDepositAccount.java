@@ -16,27 +16,27 @@ public class FixedDepositAccount extends BankAccount {
         this.interest = interest;
     }
 
-    public FixedDepositAccount(String name, float balance, float interest, Integer duration){
+    public FixedDepositAccount(String name, float balance, float interest, Integer duration) {
         super(name, balance);
         this.interest = interest;
         this.durationMonths = duration;
     }
 
     @Override
-    public void deposit(float value){
+    public void deposit(float value) {
         throw new UnsupportedOperationException();
     };
 
     @Override
-    public void withdraw(float value){
+    public void withdraw(float value) {
         throw new UnsupportedOperationException();
     };
 
     @Override
-    public float getAccountBalance(){
-        float fdBalance = super.getAccountBalance() * (interest + 100)/100;
+    public float getAccountBalance() {
+        float fdBalance = super.getAccountBalance() * (interest + 100) / 100;
         System.out.println("Fixed Deposit Account Balance: " + fdBalance);
-        return fdBalance; 
+        return fdBalance;
     }
 
     public float getInterest() {
@@ -80,7 +80,5 @@ public class FixedDepositAccount extends BankAccount {
     public void setDurationMonthsChanged(boolean durationMonthsChanged) {
         this.durationMonthsChanged = durationMonthsChanged;
     }
-
-
 
 }

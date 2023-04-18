@@ -13,7 +13,6 @@ public class App {
 
         FixedDepositAccount fd1 = new FixedDepositAccount("Dom", 100);
 
-        // fd1.deposit(50);
         fd1.getAccountBalance();
 
         FixedDepositAccount fd2 = new FixedDepositAccount("Dom2", 100, 5);
