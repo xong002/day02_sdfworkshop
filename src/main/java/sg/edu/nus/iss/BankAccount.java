@@ -8,9 +8,9 @@ import java.util.UUID;
 
 public class BankAccount {
 
-    String name = "";
+    final String name;
     String accountNumber = "";
-    float accountBalance;
+    float accountBalance = 0.00f;
     ArrayList<String> transactions = new ArrayList<String>();
     boolean accountClosed = false;
     LocalDate createdDate;
@@ -78,13 +78,6 @@ public class BankAccount {
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        if (this.name == "") {
-            this.name = name;
-        } else
-            throw new UnsupportedOperationException();
     }
 
     public String getAccountNumber() {

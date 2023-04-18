@@ -39,6 +39,15 @@ public class FixedDepositAccount extends BankAccount {
         return fdBalance;
     }
 
+    // @Override
+    // public void setAccountBalance(float accountBalance) {
+    //     super.setAccountBalance(accountBalance);
+    //     if (accountBalance == 0.00f) {
+    //         this.accountBalance = accountBalance;
+    //     } else
+    //         throw new UnsupportedOperationException();
+    // }
+
     public float getInterest() {
         return interest;
     }
